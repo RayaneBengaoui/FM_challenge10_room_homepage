@@ -10,6 +10,12 @@ html {
   font-family: "Spartan", sans-serif;
 }
 
+html button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 body {
   background-color: lightblue;
   min-height: 100vh;
@@ -32,6 +38,45 @@ body .top-left-section {
   background-size: cover;
 }
 
+body .top-left-section nav {
+  width: 50rem;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem 8rem;
+}
+
+body .top-left-section nav .logo {
+  width: 12rem;
+  margin-right: 3rem;
+}
+
+body .top-left-section nav ul {
+  width: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .top-left-section nav ul li {
+  font-size: 1.5rem;
+  color: white;
+  padding: 0rem 2rem;
+}
+
 body .bg_1 {
   background-image: url("../images/desktop-image-hero-1.jpg");
 }
@@ -44,6 +89,68 @@ body .top-right-section {
   -ms-grid-row-span: 2;
   grid-row: 1/3;
   background-color: white;
+  padding: 5rem 8rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .top-right-section h1 {
+  font-size: 3.5rem;
+  padding-bottom: 2rem;
+}
+
+body .top-right-section p {
+  font-size: 1.2rem;
+  color: #a1a1a1;
+  line-height: 160%;
+}
+
+body .top-right-section .shop-btn-container {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+body .top-right-section .shop-btn-container button {
+  padding-right: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: white;
+  font-family: inherit;
+  font-size: 1.3rem;
+  letter-spacing: 1rem;
+  font-weight: 600;
+}
+
+body .top-right-section .shop-btn-container button img {
+  margin-left: 2rem;
+}
+
+body .top-right-section .left-btn {
+  padding: 3rem 4rem;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+body .top-right-section .right-btn {
+  padding: 3rem 4rem;
+  background-color: black;
+  position: absolute;
+  left: 12%;
+  bottom: 0;
 }
 
 body .bot-left-section {
