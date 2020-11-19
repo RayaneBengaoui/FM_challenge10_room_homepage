@@ -75,7 +75,6 @@ body {
     background-color: white;
     padding: 5rem 8rem;
     position: relative;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,19 +112,28 @@ body {
       }
     }
 
-    .left-btn {
-      padding: 3rem 4rem;
-      background-color: black;
+    .btn-container {
+      bottom: 0;
+      width: 10vw;
+      min-height: 8rem;
       position: absolute;
       left: 0;
       bottom: 0;
+      display: flex;
     }
-    .right-btn {
-      padding: 3rem 4rem;
+
+    .left-btn {
+      width: 50%;
+      height: 100%;
       background-color: black;
       position: absolute;
-      left: 12%;
-      bottom: 0;
+    }
+    .right-btn {
+      width: 50%;
+      height: 100%;
+      background-color: black;
+      position: absolute;
+      left: 50%;
     }
   }
   .bot-left-section {
