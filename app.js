@@ -8,3 +8,41 @@ store locator. Any questions? Don't hesitate to contact us today.`;
 const third_text = `Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
 to ensure that every product is made as perfect and as consistent as possible. With three decades of 
 experience in this industry, we understand what customers want for their home and office.`;
+
+const btnLeft = document.querySelector(".left-btn");
+const btnRight = document.querySelector(".right-btn");
+const topLeftSection = document.querySelector(".top-left-section");
+const backgroundClasses = ["bg_1", "bg_2", "bg_3"];
+
+const switchBackground = (direction) => {
+  let currentIndex = 0;
+  let index = 0;
+
+  backgroundClasses.forEach((element) => {
+    if (topLeftSection.classList.toString().includes(element)) {
+      currentIndex = backgroundClasses.indexOf(element);
+    }
+  });
+
+  if (direction === "left") {
+    if (currentIndex === 0) {
+      index = backgroundClasses.length - 1;
+    } else {
+      index = currentIndex - 1;
+    }
+  } else {
+    index = (currentIndex + 1) % 3;
+  }
+
+  topLeftSection.classList.remove(backgroundClasses[currentIndex]);
+  topLeftSection.classList.add(backgroundClasses[index]);
+};
+
+//Event Listeners
+btnLeft.addEventListener("click", () => {
+  switchBackground("left");
+});
+
+btnRight.addEventListener("click", () => {
+  switchBackground("right");
+});

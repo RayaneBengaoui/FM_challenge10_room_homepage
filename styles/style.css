@@ -81,6 +81,14 @@ body .bg_1 {
   background-image: url("../images/desktop-image-hero-1.jpg");
 }
 
+body .bg_2 {
+  background-image: url("../images/desktop-image-hero-2.jpg");
+}
+
+body .bg_3 {
+  background-image: url("../images/desktop-image-hero-3.jpg");
+}
+
 body .top-right-section {
   -ms-grid-column: 7;
   -ms-grid-column-span: 4;
