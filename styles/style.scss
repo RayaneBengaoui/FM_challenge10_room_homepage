@@ -107,6 +107,10 @@ body {
         letter-spacing: 1rem;
         font-weight: 600;
 
+        &:hover {
+          opacity: 0.5;
+        }
+
         img {
           margin-left: 2rem;
         }
@@ -121,19 +125,17 @@ body {
       left: 0;
       bottom: 0;
       display: flex;
-    }
-
-    .left-btn {
-      width: 50%;
-      height: 100%;
-      background-color: black;
-      position: absolute;
+      button {
+        width: 50%;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+        &:hover {
+          opacity: 0.75;
+        }
+      }
     }
     .right-btn {
-      width: 50%;
-      height: 100%;
-      background-color: black;
-      position: absolute;
       left: 50%;
     }
   }
