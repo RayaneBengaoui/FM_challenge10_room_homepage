@@ -131,7 +131,9 @@ body {
     .btn-container {
       bottom: 0;
       width: 10vw;
-      min-height: 8rem;
+      height: 5vw;
+      min-width: 10rem;
+      min-height: 5rem;
       position: absolute;
       left: 0;
       bottom: 0;
@@ -268,7 +270,6 @@ body {
     .top-right-section {
       grid-column: 1;
       grid-row: 2/3;
-      padding: 2rem;
 
       h1 {
         font-size: 2rem;
@@ -276,7 +277,7 @@ body {
       }
 
       .btn-container {
-        top: -8rem;
+        top: -5rem;
         right: 0;
         bottom: initial;
         left: initial;
@@ -290,7 +291,6 @@ body {
     .bot-middle-section {
       grid-column: 1;
       grid-row: 4/5;
-      padding: 2rem;
     }
     .bot-right-section {
       grid-column: 1;

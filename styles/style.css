@@ -164,7 +164,9 @@ body .top-right-section .shop-btn-container button img {
 body .top-right-section .btn-container {
   bottom: 0;
   width: 10vw;
-  min-height: 8rem;
+  height: 5vw;
+  min-width: 10rem;
+  min-height: 5rem;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -347,14 +349,13 @@ body .bot-right-section {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
-    padding: 2rem;
   }
   body .top-right-section h1 {
     font-size: 2rem;
     padding-bottom: 2rem;
   }
   body .top-right-section .btn-container {
-    top: -8rem;
+    top: -5rem;
     right: 0;
     bottom: initial;
     left: initial;
@@ -372,7 +373,6 @@ body .bot-right-section {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
-    padding: 2rem;
   }
   body .bot-right-section {
     -ms-grid-column: 1;
