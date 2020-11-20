@@ -25,6 +25,7 @@ body {
       grid-template-rows: repeat(3, 1fr);
   -ms-grid-columns: (1fr)[10];
       grid-template-columns: repeat(10, 1fr);
+  position: relative;
 }
 
 body .top-left-section {
@@ -40,7 +41,8 @@ body .top-left-section {
 }
 
 body .top-left-section nav {
-  width: 50rem;
+  position: absolute;
+  width: 40%;
   height: 10rem;
 }
 
@@ -58,11 +60,11 @@ body .top-left-section nav .large-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 4rem 8rem;
+  padding: 4rem 5rem;
 }
 
 body .top-left-section nav .large-nav .logo {
-  width: 12rem;
+  min-width: 12rem;
   margin-right: 3rem;
 }
 
@@ -77,6 +79,7 @@ body .top-left-section nav .large-nav ul {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-left: 3rem;
 }
 
 body .top-left-section nav .large-nav ul a {
@@ -344,6 +347,11 @@ body .bot-right-section {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+    padding: 2rem;
+  }
+  body .top-right-section h1 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
   }
   body .top-right-section .btn-container {
     top: -8rem;
@@ -364,6 +372,7 @@ body .bot-right-section {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
+    padding: 2rem;
   }
   body .bot-right-section {
     -ms-grid-column: 1;
