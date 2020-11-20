@@ -42,6 +42,13 @@ body .top-left-section {
 body .top-left-section nav {
   width: 50rem;
   height: 10rem;
+}
+
+body .top-left-section nav .burger-nav {
+  display: none;
+}
+
+body .top-left-section nav .large-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,12 +61,12 @@ body .top-left-section nav {
   margin: 4rem 8rem;
 }
 
-body .top-left-section nav .logo {
+body .top-left-section nav .large-nav .logo {
   width: 12rem;
   margin-right: 3rem;
 }
 
-body .top-left-section nav ul {
+body .top-left-section nav .large-nav ul {
   width: 100%;
   list-style: none;
   display: -webkit-box;
@@ -72,7 +79,8 @@ body .top-left-section nav ul {
       justify-content: space-around;
 }
 
-body .top-left-section nav ul li {
+body .top-left-section nav .large-nav ul a {
+  text-decoration: none;
   font-size: 1.5rem;
   color: white;
   padding: 0rem 2rem;
@@ -263,6 +271,72 @@ body .bot-right-section {
   }
   body .top-left-section nav {
     margin: 0rem 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body .top-left-section nav .burger-nav {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 2rem;
+  }
+  body .top-left-section nav .burger-nav span {
+    padding: 0.2rem 1.5rem;
+    background: white;
+    margin: 0.5rem 0rem;
+    display: block;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+  body .top-left-section nav .nav-links {
+    z-index: 1;
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
+  }
+  body .top-left-section nav .nav-open {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  body .top-left-section nav .toggle {
+    z-index: 2;
+    position: fixed;
+  }
+  body .top-left-section nav .toggle .line1 {
+    -webkit-transform: rotateZ(45deg) translateY(300%);
+            transform: rotateZ(45deg) translateY(300%);
+    background: white;
+  }
+  body .top-left-section nav .toggle .line2 {
+    opacity: 0;
+  }
+  body .top-left-section nav .toggle .line3 {
+    -webkit-transform: rotateZ(-45deg) translateY(-300%);
+            transform: rotateZ(-45deg) translateY(-300%);
+    background: white;
   }
   body .top-right-section {
     -ms-grid-column: 1;

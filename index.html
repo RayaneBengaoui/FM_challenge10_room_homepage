@@ -20,19 +20,26 @@
     <title>Frontend Mentor | Room homepage</title>
   </head>
   <body>
-    <div class="top-left-section bg_1">
+    <div id="top-left-section" class="top-left-section bg_1">
       <nav>
-        <img class="logo" src="./images/logo.svg" alt="logo" />
-        <ul>
-          <li>Home</li>
-          <li>Shop</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
+        <div class="burger-nav">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
+        <div class="large-nav">
+          <img class="logo" src="./images/logo.svg" alt="logo" />
+          <ul class="nav-links">
+            <li><a href="#top-left-section">Home</a></li>
+            <li><a href="#top-right-section">Shop</a></li>
+            <li><a href="#bot-middle-section">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
 
-    <div class="top-right-section">
+    <div id="top-right-section" class="top-right-section">
       <h1>Discover innovative ways to decorate</h1>
       <p>
         We provide unmatched quality, comfort, and style for property owners
@@ -55,7 +62,7 @@
       </div>
     </div>
     <div class="bot-left-section"></div>
-    <div class="bot-middle-section">
+    <div id="bot-middle-section" class="bot-middle-section">
       <h2>About our furniture</h2>
       <p>
         Our multifunctional collection blends design and function to suit your

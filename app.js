@@ -14,6 +14,10 @@ const btnRight = document.querySelector(".right-btn");
 const topLeftSection = document.querySelector(".top-left-section");
 const backgroundClasses = ["bg_1", "bg_2", "bg_3"];
 
+const nav = document.querySelector(".nav-links");
+const burger = document.querySelector(".burger-nav");
+const links = nav.querySelectorAll("a");
+
 const switchBackground = (direction) => {
   let currentIndex = 0;
   let index = 0;
@@ -45,4 +49,16 @@ btnLeft.addEventListener("click", () => {
 
 btnRight.addEventListener("click", () => {
   switchBackground("right");
+});
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("nav-open");
+  burger.classList.toggle("toggle");
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.toggle("nav-open");
+    burger.classList.toggle("toggle");
+  });
 });
