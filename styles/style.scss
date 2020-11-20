@@ -211,19 +211,25 @@ body {
       grid-row: 1/2;
 
       nav {
+        width: 60%;
         margin: 0rem 4rem;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
+        .large-nav {
+          .logo {
+            min-width: 6rem;
+          }
+        }
 
         .burger-nav {
           position: relative;
           display: block;
           cursor: pointer;
-          width: 2rem;
+          margin-right: 2.5rem;
 
           span {
-            padding: 0.2rem 1.5rem;
+            padding: 0.15rem 1.1rem;
             background: white;
             margin: 0.5rem 0rem;
             display: block;

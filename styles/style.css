@@ -275,6 +275,7 @@ body .bot-right-section {
     grid-row: 1/2;
   }
   body .top-left-section nav {
+    width: 60%;
     margin: 0rem 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -282,18 +283,21 @@ body .bot-right-section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .top-left-section nav .large-nav .logo {
+    min-width: 6rem;
   }
   body .top-left-section nav .burger-nav {
     position: relative;
     display: block;
     cursor: pointer;
-    width: 2rem;
+    margin-right: 2.5rem;
   }
   body .top-left-section nav .burger-nav span {
-    padding: 0.2rem 1.5rem;
+    padding: 0.15rem 1.1rem;
     background: white;
     margin: 0.5rem 0rem;
     display: block;
