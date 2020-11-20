@@ -1,3 +1,4 @@
+//Constants Texts
 const first_title = "Discover innovative ways to decorate";
 const second_title = "We are available all across the globe";
 const third_title = "Manufactured with the best materials";
@@ -15,22 +16,27 @@ const third_text = `Our modern furniture store provide a high level of quality. 
 to ensure that every product is made as perfect and as consistent as possible. With three decades of 
 experience in this industry, we understand what customers want for their home and office.`;
 
-const btnLeft = document.querySelector(".left-btn");
-const btnRight = document.querySelector(".right-btn");
-const topLeftSection = document.querySelector(".top-left-section");
-const backgroundClasses = ["bg_1", "bg_2", "bg_3"];
-const dynamicTitle = document.querySelector(".dynamic-title");
-const dynamicText = document.querySelector(".dynamic-text");
 const texts = [
   [first_title, first_text],
   [second_title, second_text],
   [third_title, third_text],
 ];
 
+//Query Selectors
+const btnLeft = document.querySelector(".left-btn");
+const btnRight = document.querySelector(".right-btn");
+
+const topLeftSection = document.querySelector(".top-left-section");
+const backgroundClasses = ["bg_1", "bg_2", "bg_3"];
+
+const dynamicTitle = document.querySelector(".dynamic-title");
+const dynamicText = document.querySelector(".dynamic-text");
+
 const nav = document.querySelector(".nav-links");
 const burger = document.querySelector(".burger-nav");
 const links = nav.querySelectorAll("a");
 
+//Functions
 const switchBackground = (direction) => {
   let currentIndex = 0;
   let index = 0;
